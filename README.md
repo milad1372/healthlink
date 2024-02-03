@@ -145,7 +145,7 @@ Health Link provides comprehensive API routes for managing patients, doctors, st
 | ----------------------------- | -------------------------------------------------------- |
 | /api/v1/doctor?page=2&limit=5 | Get the information in page 2 and have 5 doctor per page |
 
-## ER | Use Case |Data Flow Diagrams
+## ER | Use Case | Data Flow Diagrams
 
 ### Level 1 DFD
 ![Level 1 DFD](https://raw.githubusercontent.com/milad1372/healthlink/master/digrams/DFD-lv1.jpg)
@@ -157,4 +157,4 @@ Health Link provides comprehensive API routes for managing patients, doctors, st
 ![ER Diagram](https://raw.githubusercontent.com/milad1372/healthlink/master/digrams/ER.jpg)
 
 ## Use Case Diagram
-![Use Case Diagram](https://raw.githubusercontent.com/milad1372/healthlink/master/digrams/USECASE.jpg)
+![Use Case Diagram](https://raw.githubusercontent.com/milad1372/healthlink/master/digrams/USECASE.jpeg)
