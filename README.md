@@ -31,7 +31,7 @@ PORT=5000
 MONGO_URI=<Your MongoDB Url>
 API_URL=/api/v1
 secret=<Your secret code for JWT>
-
+```
 
 2. **Backend Setup**:
 
@@ -41,16 +41,17 @@ Install dependencies and start the backend server with the following commands:
 cd backend
 npm install
 npm start
-
+```
 
 3. **Frontend Setup**:
 
 Install dependencies and launch the React frontend with the following commands:
 
+```plaintext
 cd frontend
 npm install
 npm start
-
+```
 
 ## API Overview
 
@@ -58,8 +59,6 @@ Health Link provides comprehensive API routes for managing patients, doctors, st
 
 
 ## API Documentation
-
-#### API url : https://harmore.herokuapp.com
 
 #### Patient Route (Need JWT token)
 
