@@ -47,7 +47,7 @@ function Home() {
           There is no online doctor at this moment.
         </h1>
         <img
-          className="object-cover object-center rounded"
+          className="object-cover object-center rounded w-1/2"
           src={SadMascot}
           alt="logo"
         />
