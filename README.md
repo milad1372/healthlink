@@ -144,3 +144,17 @@ Health Link provides comprehensive API routes for managing patients, doctors, st
 | Example                       | Result                                                   |
 | ----------------------------- | -------------------------------------------------------- |
 | /api/v1/doctor?page=2&limit=5 | Get the information in page 2 and have 5 doctor per page |
+
+## ER|USECASE|Data Flow Diagrams
+
+### Level 1 DFD
+![Level 1 DFD](URL_TO_LEVEL_1_DFD)
+
+### Level 2 DFD
+![Level 2 DFD](URL_TO_LEVEL_2_DFD)
+
+## Entity-Relationship Diagram
+![ER Diagram](URL_TO_ER_DIAGRAM)
+
+## Use Case Diagram
+![Use Case Diagram](URL_TO_USE_CASE_DIAGRAM)
