@@ -42,7 +42,7 @@ const DoctorProfile = () => {
                 </div>
                 <div className='flex justify-center'>
                   <h1 className='text-center bg-pink-200 rounded-lg w-32'>
-                    {state.data.specialization.specialization}
+                    {state.data.specializations}
                   </h1>
                 </div>
               </div>

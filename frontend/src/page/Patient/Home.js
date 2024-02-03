@@ -26,7 +26,7 @@ function Home() {
 
 
   useEffect(() => {
-    const newSocket = io('localhost:5000/'); // socket connect
+    const newSocket = io('localhost:3001/'); // socket connect
     setSocket(newSocket);
     getOnlineDoc(newSocket, setOnlineDoc, type, search); // get online doctor
     fetchSpecialization(setSpec); // get specialization
@@ -145,7 +145,7 @@ const fetchDoctorData = (doctorId, setOnlineDoc, type, search) => {
   const fetchDoctor = async () => {
     try {
       let res = await Axios.get(
-        `http://localhost:5000/api/v1/doctor/${id}`,
+        `http://localhost:3001/api/v1/doctor/${id}`,
         {
           headers: {
             'x-acess-token': localStorage.getItem('token'),
@@ -162,7 +162,7 @@ const fetchDoctorData = (doctorId, setOnlineDoc, type, search) => {
       //filtter by type
       if (type !== 'All') {
         let fDoc = data.filter(function (el) {
-          return el.specialization.specialization === type;
+          return el.specialization === type;
         });
         data = fDoc;
       }
@@ -200,7 +200,7 @@ const disconnectSocket = (socket) => {
 const fetchSpecialization = (setSpec) => {
   const fetchType = async () => {
     try {
-      let res = await Axios.get(`http://localhost:5000/api/v1/specialization/`);
+      let res = await Axios.get(`http://localhost:3001/api/v1/specialization/`);
       let data = res.data.data;
 
       if (!Array.isArray(data)) {

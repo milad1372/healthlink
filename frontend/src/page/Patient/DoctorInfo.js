@@ -20,7 +20,7 @@ const DoctorInfo = ({match}) => {
   const {state} = useFetchUser(); // User data
 
   useEffect(() => {
-    const newSocket = io('localhost:5000/'); // connect socket
+    const newSocket = io('localhost:3001/'); // connect socket
     setSocket(newSocket);
     getOnlineDoc(newSocket, setOnlineDoc, setFetchFail); // get list of avaliable doctor
     newSocket.on('availableCall', (status) => { // listen for doctor to answer call
@@ -65,7 +65,7 @@ const DoctorInfo = ({match}) => {
   // color of specialization
   const colorDoc = (doctor) => {
     let color = '';
-    switch (doctor.specialization.specialization) {
+    switch (doctor.specializations) {
       case 'Physician':
         color = 'blue-300';
         break;
@@ -139,7 +139,7 @@ const DoctorInfo = ({match}) => {
                 data
               )}  inline-block px-1 rounded-md text-center justify-center`}
             >
-              {data.specialization.specialization}
+              {data.specialization}
             </h1>
           </div>
         </div>

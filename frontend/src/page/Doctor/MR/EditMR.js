@@ -44,7 +44,7 @@ const EditMR = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     Axios.put(
-      `http://localhost:5000/api/v1/medicalRecord/${data.id}`,
+      `http://localhost:3001/api/v1/medicalRecord/${data.id}`,
       bodyParameters,
       config
     )

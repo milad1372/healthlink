@@ -22,7 +22,7 @@ exports.getAllSp = asyncHandler(async (req, res) => {
     .paginate();
   // Get data
   const specialization = await feature.query;
-
+  console.log('GET /', req.path);
   // return HTTP response 
   res.status(200).json({
     status: 'sucess',

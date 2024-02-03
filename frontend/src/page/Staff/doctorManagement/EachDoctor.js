@@ -33,7 +33,7 @@ const EachDoctor = ({match}) => {
   const handleDelete = async (e) => {
     e.preventDefault();
     Axios.delete(
-      `http://localhost:5000/api/v1/doctor/${match.params.id}`,
+      `http://localhost:3001/api/v1/doctor/${match.params.id}`,
       config
     )
       .then(() => {
@@ -78,7 +78,7 @@ const EachDoctor = ({match}) => {
               </div>
               <div className='flex justify-center'>
                 <h1 className='text-center bg-pink-200 rounded-lg w-32'>
-                  {doctor.data.specialization.specialization}
+                  {doctor.data.specialization}
                 </h1>
               </div>
             </div>
@@ -208,7 +208,7 @@ const EachDoctor = ({match}) => {
 const fetchDoctor = (setDoctor, id) => {
   const fetchData = async () => {
     try {
-      let res = await Axios.get(`http://localhost:5000/api/v1/doctor/${id}`, {
+      let res = await Axios.get(`http://localhost:3001/api/v1/doctor/${id}`, {
         headers: {
           'x-acess-token': localStorage.getItem('token'),
         },

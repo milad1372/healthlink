@@ -38,6 +38,7 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "migrate-mongo": "^11.0.0",
     "nodemon": "^2.0.12"
   }
 }

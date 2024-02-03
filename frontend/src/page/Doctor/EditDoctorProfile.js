@@ -43,7 +43,7 @@ const EditDoctorProfile = () => {
 
     e.preventDefault();
     Axios.put(
-      `http://localhost:5000/api/v1/doctor/${data.id}`,
+      `http://localhost:3001/api/v1/doctor/${data.id}`,
       formData,
       config
     )
@@ -86,7 +86,7 @@ const EditDoctorProfile = () => {
               </div>
               <div className='flex justify-center'>
                 <h1 className='text-center bg-pink-200 rounded-lg w-32'>
-                  {data.specialization.specialization}
+                  {data.specializations}
                 </h1>
               </div>
             </div>

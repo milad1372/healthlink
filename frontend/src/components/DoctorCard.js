@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 const DoctorCard = ({doctor}) => {
   const colorDoc = (doctor) => { // color of the specialization
     let color = ""
-    switch (doctor.specialization.specialization) {
+    switch (doctor.specialization) {
       case "Physician":
         color = "blue-300"
         break;
@@ -66,7 +66,7 @@ const DoctorCard = ({doctor}) => {
               {doctor.name}
             </p>
             <p className={`text-sm font-medium text-gray-700 font-fontPro mb-3 bg-${colorDoc(doctor)}  inline-block px-1 rounded-md text-center justify-center`}>
-              {doctor.specialization.specialization}
+              {doctor.specialization}
             </p>
             <p className='text-xs text-gray-700 font-fontPro mb-2'>
               <i className='fas fa-graduation-cap fa-fw'></i>

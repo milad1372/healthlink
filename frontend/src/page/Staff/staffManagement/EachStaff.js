@@ -34,7 +34,7 @@ const StaffProfile = ({match}) => {
   const handleDelete = async (e) => {
     e.preventDefault();
     Axios.delete(
-      `http://localhost:5000/api/v1/staff/${match.params.id}`,
+      `http://localhost:3001/api/v1/staff/${match.params.id}`,
       config
     )
       .then(() => {
@@ -190,7 +190,7 @@ const fetchStaff = (setStaff, id) => {
   const fetchData = async () => {
     try {
       let res = await Axios.get(
-        `http://localhost:5000/api/v1/staff/${id}`,
+        `http://localhost:3001/api/v1/staff/${id}`,
         {
           headers: {
             'x-acess-token': localStorage.getItem('token'),

@@ -28,7 +28,7 @@ const Call = ({match}) => {
   const [isVideoOff, setVideoOff] = useState(false);
 
   useEffect(() => {
-    const newSocket = io('localhost:5000/'); // connect socket
+    const newSocket = io('localhost:5001/'); // connect socket
     setSocket(newSocket);
 
     const myPeer = new Peer(); // create peer
