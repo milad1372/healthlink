@@ -148,13 +148,13 @@ Health Link provides comprehensive API routes for managing patients, doctors, st
 ## ER|USECASE|Data Flow Diagrams
 
 ### Level 1 DFD
-![Level 1 DFD](URL_TO_LEVEL_1_DFD)
+![Level 1 DFD](https://raw.githubusercontent.com/milad1372/healthlink/master/digrams/DFD-lv1.jpg)
 
 ### Level 2 DFD
-![Level 2 DFD](URL_TO_LEVEL_2_DFD)
+![Level 2 DFD](https://raw.githubusercontent.com/milad1372/healthlink/master/digrams/DFD-lv2.png)
 
 ## Entity-Relationship Diagram
-![ER Diagram](URL_TO_ER_DIAGRAM)
+![ER Diagram](https://raw.githubusercontent.com/milad1372/healthlink/master/digrams/ER.jpg)
 
 ## Use Case Diagram
-![Use Case Diagram](URL_TO_USE_CASE_DIAGRAM)
+![Use Case Diagram](https://raw.githubusercontent.com/milad1372/healthlink/master/digrams/USECASE.jpg)
