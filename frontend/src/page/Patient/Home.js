@@ -4,7 +4,7 @@ import io from "socket.io-client";
 import Axios from "axios";
 import DoctorCard from "../../components/DoctorCard";
 import Spinner from "../../components/Spinner";
-import SadMascot from "../../img/mascot--sad.png";
+import SadMascot from "../../img/health-link--sad.svg";
 
 function Home() {
   useTokenCheck(); // token check
