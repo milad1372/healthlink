@@ -56,7 +56,7 @@ const UserLogin = () => {
                   type='email'
                   name='email'
                   id='email'
-                  className='focus:border-blue-500 appearance-none  rounded-xl w-8/12 py-2 px-3 text-gray-700 
+                  className='focus:border-green-500 appearance-none  rounded-xl w-8/12 py-2 px-3 text-gray-700 
                         leading-tight focus:outline-none border-2  border-gray-200'
                   autoComplete='email'
                   required
@@ -76,7 +76,7 @@ const UserLogin = () => {
                   type='password'
                   name='password'
                   id='password'
-                  className='focus:border-blue-500 appearance-none rounded-xl w-8/12 py-2 px-3 text-gray-700 
+                  className='focus:border-green-500 appearance-none rounded-xl w-8/12 py-2 px-3 text-gray-700 
                         leading-tight focus:outline-none border-2  border-gray-200'
                   autoComplete='current-password'
                   required
@@ -87,7 +87,7 @@ const UserLogin = () => {
               <div className='flex mt-5 md:flex items-center justify-center justify-items-center'>
                 <button
                   type='submit'
-                  className='align-middle bg-blue-300 hover:bg-blue-400 text-center px-4 py-2 text-white
+                  className='align-middle bg-green-300 hover:bg-green-400 text-center px-4 py-2 text-white
                         text-sm font-medium rounded-xl inline-block shadow-lg w-7/12'
                 >
                   LOGIN
