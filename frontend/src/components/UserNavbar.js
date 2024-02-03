@@ -11,7 +11,7 @@ import {
   CollectionIcon,
 } from '@heroicons/react/outline';
 // import {ChevronDownIcon} from '@heroicons/react/solid';
-import ReactLogo from '../img/logo.svg';
+import ReactLogo from '../img/LogoHL.png';
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
@@ -96,16 +96,15 @@ export default function UserNavbar() {
 
   return (
     <>
-      <Popover className='relative bg-plightBlue font-fontPro z-10'>
+      <Popover className='relative font-fontPro z-10'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6'>
           <div className='flex justify-between items-center py-3 md:justify-start md:space-x-10'>
             <div className='flex justify-start lg:w-0 lg:flex-1'>
-              <img className='h-16 w-16' src={ReactLogo} alt='logo' />
               <Link
                 className='text-3xl font-fontPro leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-gray-800'
                 to={home}
               >
-                Harmore
+                <img className='w-32' src={ReactLogo} alt='logo' />
               </Link>
             </div>
             <div className='-mr-2 -my-2 md:hidden'>
@@ -255,7 +254,7 @@ export default function UserNavbar() {
             <div className='rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50'>
               <div className='pt-5 pb-6 px-5'>
                 <div className='flex items-center justify-between'>
-                  <h1 className='text-lg'>HARMORE</h1>
+                  <h1 className='text-lg'>HealthLink</h1>
                   <div className='-mr-2'>
                     <Popover.Button className='bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-800 hover:text-gray-500 hover:bg-gray-100 '>
                       <span className='sr-only'>Close menu</span>
